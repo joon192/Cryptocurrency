@@ -2,29 +2,19 @@
 <html style="font-size: 16px;">
   <head>
     {% load static %}
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready( function() {
-    $("#contents1").load("{% static 'html/1d.html' %}");
-    $("#contents2").load("{% static 'html/3d.html' %}");
-    $("#contents3").load("{% static 'html/5d.html' %}");
-    });
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="design, Premium DesignAmazing PhotoCreative IdeasUnique Strategy, Art Director, Creative form in our design, New Illustration Style, Wild Style, Wildand Magical, design., Creative form in our design">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Main</title>
+    <title>login</title>
     <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
-    <link rel="stylesheet" href="{% static 'css/Main.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" media="screen">
     <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
     <meta name="generator" content="Nicepage 4.0.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
-    
-    
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     
     
     
@@ -34,7 +24,7 @@
 		"name": ""
 }</script>
     <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Main">
+    <meta property="og:title" content="login">
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-overlap u-white"><header class="u-clearfix u-custom-color-1 u-header u-header" id="sec-3ee1"><div class="u-clearfix u-sheet u-sheet-1">
@@ -48,13 +38,12 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:main' %}" style="padding: 10px 0px;">Main</a>
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="Main.html" style="padding: 10px 0px;">Main</a>
 </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:detail' %}" style="padding: 10px 0px;">More in crypto</a>
 </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:recommend' %}" style="padding: 10px 0px;">Recommendation</a>
 </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:about' %}" style="padding: 10px 0px;">About</a>
-</li>{% if user.is_active %}<li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:login' %}" style="padding: 10px 0px;">Logout</a>
-</li>{% else %}<li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:login' %}" style="padding: 10px 0px;">Login</a>
-</li>{% endif %}</ul>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:login' %}" style="padding: 10px 0px;">Login</a>
+</li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
@@ -73,55 +62,36 @@
       </div></header>
     <section class="u-clearfix u-custom-color-1 u-section-1" id="sec-a353">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-align-center u-custom-font u-font-playfair-display u-text u-text-body-alt-color u-text-1" data-animation-name="fadeIn" data-animation-duration="1500" data-animation-direction="Down"> Cryptocurren​cy<br>&nbsp;Sentiment Data<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Solution
+        <h1 class="u-align-center u-custom-font u-font-playfair-display u-text u-text-body-alt-color u-text-1"> Cryptocurren​cy<br>&nbsp;Sentiment Data<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Solution
         </h1>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-2" id="carousel_a722">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h4 class="u-custom-font u-font-lato u-text u-text-1">cryptocurrency&nbsp;bubble Chart</h4>
-        <div class="u-border-3 u-border-grey-dark-1 u-line u-line-horizontal u-line-1" data-animation-name="fadeIn" data-animation-duration="1500" data-animation-direction="Left"></div>
-      </div>
-    </section>
-    <section class="u-align-center u-clearfix u-section-3" id="sec-6f8e">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-expanded-width u-tab-links-align-center u-tabs u-tabs-1">
-          <ul class="u-grey-5 u-spacing-15 u-tab-list u-unstyled u-tab-list-1" role="tablist">
-            <li class="u-tab-item" role="presentation">
-              <a class="active u-active-custom-color-1 u-border-5 u-border-active-custom-color-1 u-button-style u-radius-6 u-tab-link u-text-active-black u-text-body-color u-text-hover-custom-color-1 u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">1DAY</a>
-            </li>
-            <li class="u-tab-item" role="presentation">
-              <a class="u-active-custom-color-1 u-border-5 u-border-active-custom-color-1 u-button-style u-radius-6 u-tab-link u-text-active-black u-text-body-color u-text-hover-custom-color-1 u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">3DAY</a>
-            </li>
-            <li class="u-tab-item" role="presentation">
-              <a class="u-active-custom-color-1 u-border-5 u-border-active-custom-color-1 u-button-style u-radius-6 u-tab-link u-text-active-black u-text-body-color u-text-hover-custom-color-1 u-tab-link-3" id="link-tab-2917" href="#tab-2917" role="tab" aria-controls="tab-2917" aria-selected="false">5DAY</a>
-            </li>
-          </ul>
-          <div class="u-tab-content">
-            <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
-              <div class="u-container-layout u-container-layout-1">
-                <div id="contents1"></div>
-              </div>
+        <div class="u-form u-login-control u-form-1">
+          <form action="#" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">{% csrf_token %}
+            <div class="u-form-group u-form-name">
+              <label for="username-a30d" class="u-label">ID</label>
+              <input type="text" placeholder="Enter your ID" id="username-a30d" name="username" class="u-border-grey-30 u-input u-input-rectangle u-input-1" required="">
             </div>
-            <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
-              <div class="u-container-layout u-container-layout-2">
-                <div id="contents2"></div>
-              </div>
+            <div class="u-form-group u-form-password">
+              <label for="password-a30d" class="u-label">Password</label>
+              <input type="password" placeholder="Enter your Password" id="password-a30d" name="password" class="u-border-grey-30 u-input u-input-rectangle u-input-2" required="">
             </div>
-            <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-3" id="tab-2917" role="tabpanel" aria-labelledby="link-tab-2917">
-              <div class="u-container-layout u-container-layout-3">
-                <div id="contents3"></div>
-              </div>
+            <div class="u-form-checkbox u-form-group">
+              <input type="checkbox" id="checkbox-a30d" name="remember" value="On">
+              <label for="checkbox-a30d" class="u-label">Remember me</label>
             </div>
-          </div>
+            <div class="u-align-left u-form-group u-form-submit">
+              <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-1 u-hover-grey-40 u-btn-1">Login</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+          </form>
         </div>
-      </div>
-    </section>
-    <section class="u-clearfix u-custom-color-1 u-section-4" id="carousel_3bce">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-custom-font u-font-playfair-display u-text u-text-white u-text-1" data-animation-name="fadeIn" data-animation-duration="1500" data-animation-direction="Down">What is the best cryptocurrency<br>to you?
-        </h1>
-        <a href="{% url 'user:recommend' %}" data-page-id="59594546" class="u-border-none u-btn u-button-style u-grey-60 u-hover-grey-40 u-text-body-alt-color u-text-hover-white u-btn-1" data-animation-name="fadeIn" data-animation-duration="1500" data-animation-direction="Left" data-animation-delay="1000">NEXT</a>
+        <p class="u-text u-text-default u-text-1">
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-2" href="{% url 'user:signup' %}" data-page-id="82914253">Don't have an account?</a>
+        </p>
       </div>
     </section>
     <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {

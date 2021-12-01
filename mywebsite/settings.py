@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost','35.76.154.105']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'django_elasticsearch_dsl',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -39,6 +40,50 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
 ]
+
+ELASTICSEARCH_DSL = {
+    'default': {
+        'hosts': 'localhost:9200'
+    },
+}
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'simple': {
+            'format': "%(levelname)s %(message)s"
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'logstash': {
+            'level': 'WARNING',
+            'class': 'logstash.TCPLogstashHandler',
+            'host': 'localhost',
+            'port': 5959,
+            'version': 1,
+            'message_type': 'django',
+            'fqdn': False,
+            'tags': ['django.request'],
+        },
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['logstash'],
+            'level': 'WARNING',
+            'propagate': True,
+        },
+        'django': {
+            'handlers': ['console'],
+            'propagate': True,
+        },
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -77,7 +122,7 @@ WSGI_APPLICATION = 'mywebsite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Newtest',
+        'NAME': 'WEB',
         'USER': 'root',
         'PASSWORD': 'multi1203',
         'HOST': '35.76.154.105',
@@ -120,7 +165,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

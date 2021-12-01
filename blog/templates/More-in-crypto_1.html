@@ -2,6 +2,19 @@
 <html style="font-size: 16px;">
   <head>
     {% load static %}
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready( function() {
+    $("#ADA").load("{% static 'html/ADA.html' %}");
+    $("#BCH").load("{% static 'html/BCH.html' %}");
+    $("#BTC").load("{% static 'html/BTC.html' %}");
+    $("#DOGE").load("{% static 'html/DOGE.html' %}");
+    $("#EOS").load("{% static 'html/EOS.html' %}");
+    $("#ETH").load("{% static 'html/ETH.html' %}");
+    $("#OMG").load("{% static 'html/OMG.html' %}");
+    $("#SNT").load("{% static 'html/SNT.html' %}");
+    });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Creative form in our design">
@@ -9,13 +22,12 @@
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>More in crypto</title>
     <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
-    <link rel="stylesheet" href="{% static 'css/More-in-crypto.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'css/More-in-crypto.css' %}" media="screen">
     <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
-    <meta name="generator" content="Nicepage 4.0.3, nicepage.com">
+    <meta name="generator" content="Nicepage 3.30.2, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
-    
 
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
@@ -41,9 +53,7 @@
 </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:detail' %}" style="padding: 10px 0px;">More in crypto</a>
 </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:recommend' %}" style="padding: 10px 0px;">Recommendation</a>
 </li><li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:about' %}" style="padding: 10px 0px;">About</a>
-</li>{% if user.is_active %}<li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:login' %}" style="padding: 10px 0px;">Logout</a>
-</li>{% else %}<li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-hover-grey-90 u-text-white" href="{% url 'user:login' %}" style="padding: 10px 0px;">Login</a>
-</li>{% endif %}</ul>
+</li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
@@ -74,40 +84,31 @@
     <section class="u-clearfix u-section-3" id="sec-194d">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h4 class="u-custom-font u-font-lato u-text u-text-1">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-60 u-btn-1" href="{% url 'user:ada' %}" data-page-id="60132879">ADA</a>
-            <img src="{% static 'images/coins/ADA.jpg' %}" width="300" height="200" >
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-60 u-btn-1" href="More-in-crypto.html#sec-ff45" data-page-id="60132879">ADA</a>
         </h4>
         <h4 class="u-custom-font u-font-lato u-text u-text-2">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-text-hover-grey-50 u-btn-2" href="{% url 'user:bch' %}" data-page-id="60132879">BCH</a>
-            <img src="{% static 'images/coins/BCH.jpg' %}" width="300" height="200" >
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-text-hover-grey-50 u-btn-2" href="More-in-crypto.html#sec-ceaf" data-page-id="60132879">BCH</a>
         </h4>
         <h4 class="u-custom-font u-font-lato u-text u-text-3">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-3" href="{% url 'user:btc' %}" data-page-id="60132879">BTC</a>
-            <img src="{% static 'images/coins/BTC.png' %}" width="300" height="200" >
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-3" href="More-in-crypto.html#sec-d249" data-page-id="60132879">BTC</a>
         </h4>
         <h4 class="u-custom-font u-font-lato u-text u-text-4">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-4" href="{% url 'user:doge' %}" data-page-id="60132879">DOGE</a>
-            <img src="{% static 'images/coins/DOGE.jpg' %}" width="300" height="200" >
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-4" href="More-in-crypto.html#sec-c9d5" data-page-id="60132879">DOGE</a>
         </h4>
         <h4 class="u-custom-font u-font-lato u-text u-text-5">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-5" href="{% url 'user:eos' %}" data-page-id="60132879">EOS</a>
-            <img src="{% static 'images/coins/EOS.jpg' %}" width="300" height="200" >
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-5" href="More-in-crypto.html#sec-1fd8" data-page-id="60132879">EOS</a>
         </h4>
         <h4 class="u-custom-font u-font-lato u-text u-text-6">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-6" href="{% url 'user:eth' %}" data-page-id="60132879">ETH</a>
-            <img src="{% static 'images/coins/ETH.jpg' %}" width="300" height="200" >
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-6" href="More-in-crypto.html#sec-d7ba" data-page-id="60132879">ETH</a>
         </h4>
         <h4 class="u-custom-font u-font-lato u-text u-text-7">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-7" href="{% url 'user:snt' %}" data-page-id="60132879">SNT</a>
-            <img src="{% static 'images/coins/SNT.png' %}" width="300" height="200" >
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-7" href="More-in-crypto.html#sec-244c" data-page-id="60132879">SNT</a>
         </h4>
         <h4 class="u-custom-font u-font-lato u-text u-text-8">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-8" href="{% url 'user:xrp' %}" data-page-id="60132879" target="_blank">XRP</a>
-            <img src="{% static 'images/coins/RIPPLE.jpg' %}" width="300" height="200" >
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-8" href="More-in-crypto.html#sec-4eea" data-page-id="60132879">XRP</a>
         </h4>
         <h4 class="u-custom-font u-font-lato u-text u-text-9">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-9" href="{% url 'user:omg' %}" data-page-id="60132879">OMG</a>
-            <img src="{% static 'images/coins/OMG.jpg' %}" width="300" height="200" >
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-grey-50 u-btn-9" href="More-in-crypto.html#sec-4cee" data-page-id="60132879">OMG</a>
         </h4>
         <h4 class="u-align-center u-custom-font u-font-roboto u-text u-text-10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</h4>
       </div>
@@ -115,7 +116,92 @@
     <section class="u-align-center u-border-2 u-border-grey-5 u-clearfix u-grey-5 u-section-4" id="sec-8043">
       <div class="u-align-left u-clearfix u-sheet u-valign-middle u-sheet-1"></div>
     </section>
-
+    <section class="u-align-center u-clearfix u-grey-5 u-section-5" id="sec-ff45">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1">ADA</p>
+        <div id="ADA"></div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-6" id="sec-ceaf">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1">BCH</p>
+        <div id="BCH"></div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-7" id="sec-d249">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1">BTC</p>
+        <div id="BTC"></div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-8" id="sec-c9d5">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1">DOGE</p>
+        <div id="DOGE"></div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-9" id="sec-1fd8">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1">EOS</p>
+        <div id="EOS"></div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-10" id="sec-d7ba">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1">ETH</p>
+        <div id="ETH"></div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-11" id="sec-4cee">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1">OMG</p>
+        <div id="OMG"></div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-12" id="sec-244c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1">SNT</p>
+        <div id="SNT"></div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-13" id="sec-4eea">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1">XRP</p>
+        <div class="u-expanded-width u-tabs u-tabs-1">
+          <ul class="u-tab-list u-unstyled" role="tablist">
+            <li class="u-tab-item u-tab-item-1" role="presentation">
+              <a class="active u-active-white u-button-style u-tab-link u-tab-link-1" id="link-tab-285f" href="#tab-285f" role="tab" aria-controls="tab-285f" aria-selected="true">국내</a>
+            </li>
+            <li class="u-tab-item u-tab-item-2" role="presentation">
+              <a class="u-active-white u-button-style u-tab-link u-tab-link-2" id="link-tab-810c" href="#tab-810c" role="tab" aria-controls="tab-810c" aria-selected="false">해외</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-white u-button-style u-tab-link u-tab-link-3" id="link-tab-78e4" href="#tab-78e4" role="tab" aria-controls="tab-78e4" aria-selected="false">가격</a>
+            </li>
+          </ul>
+          <div class="u-tab-content">
+            <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-285f" role="tabpanel" aria-labelledby="link-tab-285f">
+              <div class="u-container-layout u-container-layout-1">
+                <h3 class="u-text u-text-default u-text-2">Basic Settings</h3>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-tab-pane u-white u-tab-pane-2" id="tab-810c" role="tabpanel" aria-labelledby="link-tab-810c">
+              <div class="u-container-layout u-valign-top u-container-layout-2">
+                <p class="u-text u-text-3">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+                  <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                </p>
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane u-white u-tab-pane-3" id="tab-78e4" role="tabpanel" aria-labelledby="link-tab-78e4">
+              <div class="u-container-layout u-container-layout-3">
+                <h4 class="u-text u-text-default u-text-4">Be The First To Review This Product!</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-408c"><div class="u-clearfix u-sheet u-sheet-1">

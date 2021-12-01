@@ -248,16 +248,16 @@
 }
 
 .u-section-4 .u-sheet-1 {
-  min-height: 505px;
+  min-height: 646px;
 }
 
 .u-section-4 .u-text-1 {
-  font-size: 6rem;
+  font-size: 6.25rem;
   line-height: 1.4;
   letter-spacing: 2px;
   font-weight: 700;
   animation-duration: 1000ms;
-  margin: 41px 361px 0 0;
+  margin: 69px 313px 0 0;
 }
 
 .u-section-4 .u-btn-1 {
@@ -267,13 +267,13 @@
   text-transform: uppercase;
   animation-duration: 1500ms;
   background-image: none;
-  margin: -46px 0 -1px auto;
+  margin: 69px 0 41px auto;
   padding: 10px 213px 11px;
 }
 
 @media (max-width: 1199px) {
   .u-section-4 .u-text-1 {
-    margin-right: 161px;
+    margin-right: 113px;
   }
 }
 
